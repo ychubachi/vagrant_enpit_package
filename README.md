@@ -7,6 +7,10 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
   - https://www.virtualbox.org/
 - Vagrantが使えること（v1.3.1で動作確認）
   - http://www.vagrantup.com/
+- GitHubアカウントを取得していること
+  - https://github.com/
+- Herokuアカウントを取得していること
+  - https://www.heroku.com/
 
 ## Host OSでの作業
 
