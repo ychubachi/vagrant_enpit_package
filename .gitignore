@@ -1,3 +1,4 @@
 .vagrant/
-work/*
-!work/.keep
+!.keep
+/work/
+
