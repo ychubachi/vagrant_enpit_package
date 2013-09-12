@@ -61,3 +61,7 @@ $ /vagrant/scripts/generate_rails.sh <app_name>
 ```
 
 Heroku，Travis CIへのログインの後，アプリの生成が始まります．
+
+## Memo
+
+- インストールし直しする場合は、vagrant box removeすること。
