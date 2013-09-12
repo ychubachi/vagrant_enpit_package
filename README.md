@@ -25,7 +25,8 @@ Macの場合
 $ vagrant ssh
 ```
 
-Windowsの場合，Putty/TeraTermなどでSSH接続
+Windowsの場合，vagrant sshだと文字化けするのでPutty/TeraTermなどで
+SSH接続し，漢字コードをUTF-8にしてください．
 
 - host: localhost
 - port: 2222
@@ -44,7 +45,7 @@ cd /vagrant/work
 
 ### GitHubへのSSH公開鍵
 
-Guest OSでGitHubへSSH公開鍵を登録していない場合は下記のコマンドを実行してください．
+Guest OSでSSH鍵を生成してGitHubに登録します．
 
 ```bash
 $ /vagrant/scripts/github-connect.sh
