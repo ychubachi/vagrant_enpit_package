@@ -1,5 +1,5 @@
 ## 概要
-Vagrantを用いてRuby on Railsのアプリケーションを開発するための仮想環境を作るための設定です。
+Vagrantを用いてRuby on Railsのアプリケーションを開発するための仮想環境を作るための設定です．
 Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を行い，Deployするところまでを自動化するscriptを同梱しています．
 
 ## 前提
