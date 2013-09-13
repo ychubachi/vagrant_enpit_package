@@ -12,8 +12,19 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
   - https://github.com/
 - Herokuアカウントを取得していること
   - https://www.heroku.com/
+- Gitコマンドが利用できること
+  - http://git-scm.com/
 
 ## Host OSでの作業
+
+### このリポジトリのダウンロード
+
+コマンドプロンプトから次の通り入力．
+
+```
+$ git clone git@github.com:ychubachi/vagrant_enpit_package.git
+$ cd vagrant_enpit_package
+```
 
 ### Gust OSの起動
 
