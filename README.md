@@ -55,7 +55,7 @@ SSH接続し，漢字コードをUTF-8にしてください．
 
 ### 作業用ディレクトリ
 
-Host OSは/vagrantディレクトリに，Gest OSのこのREADME.mdがあるディレクトリをマウントします．この下にあるworkディレクトリで作業してください．
+Host OSのこのREADME.mdがあるディレクトリを，Guest OSは/vagrantディレクトリにマウントします．この下にあるworkディレクトリで作業してください．
 
 ```bash
 cd /vagrant/work
