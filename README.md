@@ -35,13 +35,15 @@ $ vagrant up
 ```
 
 ### SSH接続
-Macの場合
+#### Macの場合
 
 ```bash
 $ vagrant ssh
 ```
 
-Windowsの場合，vagrant sshだと文字化けするのでPutty/TeraTermなどで
+#### Windowsの場合
+
+vagrant sshだと文字化けするのでPutty/TeraTermなどで
 SSH接続し，漢字コードをUTF-8にしてください．
 
 - host: localhost
