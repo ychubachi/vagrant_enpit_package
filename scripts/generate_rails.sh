@@ -21,6 +21,15 @@ app_name=$1
 # 色付きecho
 function my_echo { command echo -e "\e[33m$*\e[m"; }
 
+# ~/.gemrcの設定
+gemrc=~/.gemrc
+if [ ! -f ${gemrc} ]; then
+    my_echo "${gemrc}を作成します"
+    cat << EOS > ${gemrc}
+gem: --no-rdoc --no-ri
+EOS
+fi
+
 # ================================================================
 # Heroku, Travis CIにログインする
 # ================================================================
