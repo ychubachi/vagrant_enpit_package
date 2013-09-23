@@ -4,16 +4,22 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
 
 ## 前提
 
-- Gitコマンドが利用できること
-  - http://git-scm.com/
-- VirtualBox（4.2.18で動作確認）
-  - https://www.virtualbox.org/
-- Vagrantが使えること（v1.3.1で動作確認）
-  - http://www.vagrantup.com/
+### アカウントの作成
+
 - GitHubアカウントを取得していること
-  - https://github.com/
+  - [GitHub](https://github.com/)
 - Herokuアカウントを取得していること
-  - https://www.heroku.com/
+  - [Heroku | Cloud Application Platform](https://www.heroku.com/)
+
+### ソフトウエアのインストール
+
+- Gitコマンド（下記のどちらか一方を選択）
+  - [GitHub for Windows](http://windows.github.com/)
+  - [GitHub for Mac](http://mac.github.com/)
+- VirtualBox
+  - [Oracle VM VirtualBox](https://www.virtualbox.org/)
+- Vagrant
+  - [Vagrant](http://www.vagrantup.com/)
 
 ## Host OSでの作業
 
