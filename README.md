@@ -13,49 +13,38 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
 
 ### ソフトウエアのインストール
 
-- Gitコマンド（下記のどちらか一方を選択）
-  - [GitHub for Windows](http://windows.github.com/)
-  - [GitHub for Mac](http://mac.github.com/)
-- VirtualBox
+- Windows/Mac共通
   - [Oracle VM VirtualBox](https://www.virtualbox.org/)
-- Vagrant
   - [Vagrant](http://www.vagrantup.com/)
+- Windowsのみ
+  - [GitHub for Windows](http://windows.github.com/)
 
 ## Host OSでの作業
 
 ### このリポジトリのダウンロード
 
-コマンドプロンプトから次の通り入力．
+Windowsの場合はGitHub for Windowsに付属する「Git Shell」を起動します．Macの場合はターミナルを起動してください．
+
+次の通り入力します．
 
 ```
-$ git clone git@github.com:ychubachi/vagrant_enpit_package.git
+$ git clone https://github.com/ychubachi/vagrant_enpit_package.git
 $ cd vagrant_enpit_package
 ```
 
 ### Gust OSの起動
 
-電源とネットワークの状態のよい環境で実行してください．
+電源とネットワークの状態のよい環境で実行してください（10～20分程度かかる）．
 
 ```bash
 $ vagrant up
 ```
 
 ### SSH接続
-#### Macの場合
 
 ```bash
 $ vagrant ssh
 ```
-
-#### Windowsの場合
-
-vagrant sshだと文字化けするのでPutty/TeraTermなどで
-SSH接続し，漢字コードをUTF-8にしてください．
-
-- host: localhost
-- port: 2222
-- user: vagrant
-- password: vagrant
 
 ## Guest OSでの作業
 
