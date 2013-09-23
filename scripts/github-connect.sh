@@ -52,6 +52,17 @@ do
 done
 
 # --------------------------------------------
+# Set ScrictHostKeyChecking to no
+# --------------------------------------------
+ssh_config=~/.ssh/config
+if [ ! -f ${ssh_config} ]; then
+    cat << EOS > ${ssh_config}
+host *
+    StrictHostKeyChecking no
+EOS
+fi
+
+# --------------------------------------------
 # Prompt for user and password if not provided
 # --------------------------------------------
 if [ -z "$USER" ]
@@ -61,6 +72,7 @@ fi
 if [ -z "$PASSWD" ]
 	then
 		read -s -p "Enter your github password: " PASSWD
+                echo
 fi
 
 # ----------------------------------------------
