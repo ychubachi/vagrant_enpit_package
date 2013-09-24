@@ -17,15 +17,17 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
   - [Oracle VM VirtualBox](https://www.virtualbox.org/)
   - [Vagrant](http://www.vagrantup.com/)
 - Windowsのみ
-  - [GitHub for Windows](http://windows.github.com/)
+  - [Git - Downloading Package](http://git-scm.com/download/win)
 
 ## Host OSでの作業
 
 ### このリポジトリのダウンロード
 
-Windowsの場合はGitHub for Windowsに付属する「Git Shell」を起動します．Macの場合はターミナルを起動してください．
+Windowsの場合はWindows版Gitに付属する「Git Bash」を起動します．起動後，ウインドウのタイトルを右クリックして，プロパティを開き，フォントを「ラスターフォント」に設定してください．
 
-次の通り入力します．
+Macの場合はターミナルを起動してください．
+
+ターミナルで次の通り入力します．
 
 ```
 $ git clone https://github.com/ychubachi/vagrant_enpit_package.git
