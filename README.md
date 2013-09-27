@@ -4,56 +4,55 @@ Railsアプリを作成し，GitHub，Travis CI，Herokuと連携する設定を
 
 ## 前提
 
-- VirtualBox（4.2.18で動作確認）
-  - https://www.virtualbox.org/
-- Vagrantが使えること（v1.3.1で動作確認）
-  - http://www.vagrantup.com/
+### アカウントの作成
+
 - GitHubアカウントを取得していること
-  - https://github.com/
+  - [GitHub](https://github.com/)
 - Herokuアカウントを取得していること
-  - https://www.heroku.com/
-- Gitコマンドが利用できること
-  - http://git-scm.com/
+  - [Heroku | Cloud Application Platform](https://www.heroku.com/)
+
+### ソフトウエアのインストール
+
+- Windows/Mac共通
+  - [Oracle VM VirtualBox](https://www.virtualbox.org/)
+  - [Vagrant](http://www.vagrantup.com/)
+- Windowsのみ
+  - [Git - Downloading Package](http://git-scm.com/download/win)
 
 ## Host OSでの作業
 
 ### このリポジトリのダウンロード
 
-コマンドプロンプトから次の通り入力．
+Windowsの場合はWindows版Gitに付属する「Git Bash」を起動します．起動後，ウインドウのタイトルを右クリックして，プロパティを開き，フォントを「ラスターフォント」に設定してください．
+
+Macの場合はターミナルを起動してください．
+
+ターミナルで次の通り入力します．
 
 ```
-$ git clone git@github.com:ychubachi/vagrant_enpit_package.git
+$ git clone https://github.com/ychubachi/vagrant_enpit_package.git
 $ cd vagrant_enpit_package
 ```
 
 ### Gust OSの起動
 
-電源とネットワークの状態のよい環境で実行してください．
+電源とネットワークの状態のよい環境で実行してください（10～20分程度かかる）．
 
 ```bash
 $ vagrant up
 ```
 
 ### SSH接続
-Macの場合
 
 ```bash
 $ vagrant ssh
 ```
 
-Windowsの場合，vagrant sshだと文字化けするのでPutty/TeraTermなどで
-SSH接続し，漢字コードをUTF-8にしてください．
-
-- host: localhost
-- port: 2222
-- user: vagrant
-- password: vagrant
-
 ## Guest OSでの作業
 
 ### 作業用ディレクトリ
 
-Host OSは/vagrantディレクトリに，Gest OSのこのREADME.mdがあるディレクトリをマウントします．この下にあるworkディレクトリで作業してください．
+Host OSのこのREADME.mdがあるディレクトリを，Guest OSは/vagrantディレクトリにマウントします．この下にあるworkディレクトリで作業してください．
 
 ```bash
 cd /vagrant/work
